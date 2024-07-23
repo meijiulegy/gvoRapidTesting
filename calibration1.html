@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calibration Method 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Calibration Method 1</H1>
+    
+    <H3>Instructions:</H3>
+    <ul>
+        <li>You may take a break before proceeding.</li>
+        <li>Press - or + to resize the card below to match the size of a standard ID/bank card.</li>
+        <li>Place your eyes at <strong>29.7cm</strong> from screen (length of the long side of an A4 paper) and hold still during the following test.</li>
+        <li>After the following visual field test, you will be asked to assign a score to this distance calibraion method based on ease of use.</li>
+        <li>When ready, cover the eye that is not being tested, and press button below to start the test. </li>
+    </ul><br>
+
+    <div class = "cardResizer">
+        <div class = "card">
+            <img class = "cardImg" id='bankCard' src = "card.jpg">
+        </div>
+        <button id = "smaller">-</button>
+        <button id = "bigger">+</button>
+    </div><br>
+    <p id="errorMsg" style="color: red;"></p>
+
+
+    <a href="gvo.html"  
+        onclick="window.open('gvo.html', 
+                         'newwindow', 
+                         'width=screen.width, height=200'); 
+              return false;"
+    ><button id="startGVO" onclick="storeBlindSpotX()">start test</button></a>
+    
+    
+    
+    <script src="calibration.js"></script>
+</body>
+</html>

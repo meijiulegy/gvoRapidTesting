@@ -1,0 +1,152 @@
+.exclusionMessage {
+  display: none;
+}
+
+#demographicForm {
+  display: none;
+}
+
+#instructionContainer {
+  display: none;
+}
+
+.card {
+  height: 500px;
+  width: 800px;
+}
+
+.cardImg {
+  position: relative;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardResizer button{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 100%;
+  left: 0;
+  font-size: 30px;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.lineDiv {
+  height: 500px;
+}
+.buttonsContainer button{
+  display: none;
+}
+
+.blindSpotCalibrationField {
+  height: 500px;
+  background-color: hsl(0, 0%, 60%);
+}
+
+#fixationPoint {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute; /* Changed from relative to absolute for accurate positioning */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the fixation point */
+  display: block;
+}
+
+:root {
+  --blindSpotMovement: 1300px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+  display: none; /* Hide initially */
+}
+
+#blindSpotLocator1 {
+  background-color: red;
+}
+
+#blindSpotLocator2 {
+  background-color: red;
+}
+
+#blindSpotLocator3 {
+  background-color: red;
+}
+
+.locatorStartMoving {
+  animation-name: slideRight;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes slideRight {
+  to {
+      transform: translateX(var(--blindSpotMovement));
+  }
+}
+
+#buttonsContainer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#msgContainer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#blindSpotLocation {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /*used to validate blindspot calculation during development, set translateX to blindspot-30px*/
+  transform: translateY(-100%);
+  display: none;
+}
+
+.nextButton {
+  display: none;
+}
+
+#resultDiagram {
+  width: 400px; 
+  height: 400px; 
+  background-color: hsl(0, 0%, 100%); 
+  position: relative;
+  
+  border: solid 2px hsl(0, 0%, 15%)
+}
+
+.section {
+  border: 1px solid #272727;
+  position: absolute;
+}
+
+input[type="radio"]{
+  margin: 0 0 0 25px;
+}
+
+
+

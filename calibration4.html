@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calibration Method 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Calibration Method 4</H1>
+    <H3>Instructions:</H3>
+    <ul>
+        <li>You may take a break before proceeding.</li>
+        <li>Fixate the chosen test eye on the yellow target below and cover the other eye.</li>
+        <li><strong>Move your head back and forth until the red dot disappears.</strong></li>
+        <li>Keep your head still in this position.</li>
+        <li>After the following visual field test, you will be asked to assign a score to this distance calibraion method based on ease of use.</li>
+        <li>Press 'start test' button to start the test. </li>
+    </ul><br>
+
+    <div class="blindSpotCalibrationField">
+        <div class = "circle" id="fixationPoint"></div>
+        <div class = "circle" id="blindSpotLocator1"></div>
+        <div class = "circle" id="blindSpotLocation"></div>
+    </div>
+    <br>
+
+    <div id="buttonsContainer">
+        <a href="gvo.html"  
+            onclick="window.open('gvo.html', 
+                            'newwindow', 
+                            'width=screen.width, height=200'); 
+                return false;"
+        ><button>start test</button></a>
+    </div>
+    
+    
+    <script src="calibration.js"></script>
+</body>
+</html>

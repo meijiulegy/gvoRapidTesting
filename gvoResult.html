@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>GVO Results</H1>
+    <div id="resultDiagram" class="square"></div><Br>
+
+    <div id="userScoreContainer">
+        <h2>Select a score</h2>
+        <p id="reminder">Please assign a score to the previous distance calibration method based on ease of use:</p>
+        <p>(1 = difficult/inconvenient)</p>
+        <p>(10 = easy to implement)</p>
+        <input type="radio" name="userScore" id="score1" value="1">
+        <label for="score1">1</label>
+        <input type="radio" name="userScore" id="score2" value="2">
+        <label for="score1">2</label>
+        <input type="radio" name="userScore" id="score3" value="3">
+        <label for="score1">3</label>
+        <input type="radio" name="userScore" id="score4" value="4">
+        <label for="score1">4</label>
+        <input type="radio" name="userScore" id="score5" value="5">
+        <label for="score1">5</label>
+        <input type="radio" name="userScore" id="score6" value="6">
+        <label for="score1">6</label>
+        <input type="radio" name="userScore" id="score7" value="7">
+        <label for="score1">7</label>
+        <input type="radio" name="userScore" id="score8" value="8">
+        <label for="score1">8</label>
+        <input type="radio" name="userScore" id="score9" value="9">
+        <label for="score1">9</label>
+        <input type="radio" name="userScore" id="score10" value="10">
+        <label for="score1">10</label>
+    </div><br>
+    
+    
+    <div class="nextMethodButtons">
+        <a href="calibration1.html"><button class="nextButton" id="goToCalibration1" onclick="window.open('calibration1.html', 
+            'newwindow', 
+            'width=screen.width, height=200'); 
+            return false;">Go to calibration method 1</button></a>
+
+        <a href="calibration2.html"><button disabled class="nextButton" id="goToCalibration2" onclick="window.open('calibration2.html', 
+                'newwindow', 
+                'width=screen.width, height=200'); 
+        return false;">Go to calibration method 2</button></a>
+
+
+        <a href="calibration3.html"  
+        onclick="window.open('calibration3.html', 
+                         'newwindow', 
+                         'width=screen.width, height=200'); 
+              return false;"
+        ><button disabled class="nextButton" id="goToCalibration3">Go to calibration method 3</button></a>
+
+        <a href="calibration4.html"  
+        onclick="window.open('calibration4.html', 
+                         'newwindow', 
+                         'width=screen.width, height=200'); 
+              return false;"
+        ><button disabled class="nextButton" id="goToCalibration4">Go to calibration method 4</button></a>
+
+        <a href="endInstructions.html"  
+        onclick="window.open('endInstructions.html', 
+                         'newwindow', 
+                         'width=screen.width, height=200'); 
+              return false;"
+        ><button disabled class="nextButton" id="goToEndInstructions">Go to end instructions</button></a>
+
+    </div>
+    
+
+    <script src="gvoResult.js"></script>
+</body>
+</html>

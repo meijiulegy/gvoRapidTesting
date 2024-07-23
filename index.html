@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GVO Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Online GVO</H1>
+
+
+    <form id="questionnaireContainer">
+        <p>Welcome to online visual field test.</p>
+        <p>This tool is intended for research and education. </p>
+        <p>This is not a medical exam. It is not intended for use in the diagnosis, treatment or prevention of diseases.</p>
+        <p>Please start with the questionnaire below.</p>
+        <p></p><br>
+
+        <H3>Questionnaire</H3>
+        <p>In order to aquire valid data for analysis, eyes with increased risk of visual field defects are excluded.</p>
+        <p>Please answer the following questions before proceeding with the tests.</p>
+
+        <p>1. Are you currently under the care of an ophthalmologist?</p>
+        <input type="radio" name="question1" id="choice1-1" value="1">
+        <label for="choice1-1">Yes</label>
+        <input type="radio" name="question1" id="choice1-2" value="0">
+        <label for="choice1-2">No</label>
+
+        <p>2. Have you been in contact with an ophthalmologist before?</p>
+        <input type="radio" name="question2" id="choice2-1" value="1">
+        <label for="choice2-1">Yes</label>
+        <input type="radio" name="question2" id="choice2-2" value="0">
+        <label for="choice2-2">No</label>
+
+        <p>3. Do you have a first-degree relative with the eye disease glaucoma, or have you ever had an elevated eye pressure measured by an optician?</p>
+        <input type="radio" name="question3" id="choice3-1" value="1">
+        <label for="choice3-1">Yes</label>
+        <input type="radio" name="question3" id="choice3-2" value="0">
+        <label for="choice3-2">No</label>
+
+        <p>4. Are you currently under the care of a neurologist?</p>
+        <input type="radio" name="question4" id="choice4-1" value="1">
+        <label for="choice4-1">Yes</label>
+        <input type="radio" name="question4" id="choice4-2" value="0">
+        <label for="choice4-2">No</label>
+
+        <p>5. Have you been in contact with a neurologist before?</p>
+        <input type="radio" name="question5" id="choice5-1" value="1">
+        <label for="choice5-1">Yes</label>
+        <input type="radio" name="question5" id="choice5-2" value="0">
+        <label for="choice5-2">No</label><br><br>
+
+        <button disabled type="submit" id="questionnaireSubmit">Submit</button>
+
+    </form><br>
+
+    <div class="exclusionMessage" id="exclusionMessage">
+        <H3>Thank you for your interest</H3>
+        <p>In order to aquire valid data for analysis, eyes with increased chance of visual field defects are excluded.</p>
+        <p>Based on the answers you provided, you are excluded form the study.</p>
+        <p>Thank you for your interest. If you have questions, please send an email to: <a href= "mailto: y.gu@umcg.nl">y.gu@umcg.nl</a></p>
+    </div>
+
+    <div class="exclusionMessage" id="ageExclusionMessage">
+        <H3>Thank you for your interest</H3>
+        <p>This study is limited to volunteers above 18 years of age for ethical concerns.</p>
+        <p>You may not continue with this study.</p>
+        <p>If you have questions, please send an email to: <a href= "mailto: y.gu@umcg.nl">y.gu@umcg.nl</a></p>
+    </div>
+
+
+
+    <form id="demographicForm">
+        <H3>Tell us more about yourself.</H3>
+        <p>(This information is used for demographic analysis, not for identifying specific participants.)</p>
+
+        <p>Your gender: </p>
+        <input type="radio" name="gender" id="gender1" value="male">
+        <label for="gender1">Male</label>
+        <input type="radio" name="gender" id="gender2" value="female">
+        <label for="gender2">Female</label>
+        <input type="radio" name="gender" id="gender3" value="not shared">
+        <label for="gender3">Other. / I do not wish to share.</label><br><br>
+
+        <label for="demo2-1">Your Age: </label>
+        <input type="number" name="age" id="age" min="0" max="120">
+        <p id="errorAge" style="color: red;"></p>
+
+        <p>Your ethnicity: </p>
+        <input type="radio" name="ethnicity" id="ethnicity1" value="african">
+        <label for="ethnicity1">African</label>
+        <input type="radio" name="ethnicity" id="ethnicity2" value="arab">
+        <label for="ethnicity2">Arab</label>
+        <input type="radio" name="ethnicity" id="ethnicity3" value="asian">
+        <label for="ethnicity3">Asian</label>
+        <input type="radio" name="ethnicity" id="ethnicity4" value="caucasian">
+        <label for="ethnicity4">Caucasian</label>
+        <input type="radio" name="ethnicity" id="ethnicity5" value="other">
+        <label for="ethnicity5">Other ethnicities</label>
+        <input type="radio" name="ethnicity" id="ethnicity6" value="not shared">
+        <label for="ethnicity6">I do not wish to share.</label><br><br>
+
+        <button disabled type="submit" id="demoSubmit">Submit</button>
+
+    </form><br>
+
+    <form id="instructionContainer">
+        <H3>Instructions:</H3>
+        <p>Do not return to previous pages during the test.</p>
+        <p>Do not resize the windows.</p>
+        <p>Each visual field test takes less than 1 minute. You may take a break between tests. The entire process should take 5-10 minutes without breaks.</p>
+        <p>You will start with a practice round of visual field test, followed by four rounds of distance calibration, each followed by an additional round of visual field test. </p>
+        <p>For the distance calibrations, you will need: an A4 sized paper/notebook, and a rope to measure distance with.</p>
+
+        <p>During a visual field test:</p>
+        <ul>
+            <li>Dim the lighting in the environment.</li>
+            <li>Put on your corrective lenses or reading glasses.</li>
+            <li>Keep your head still.</li>
+            <li>Cover the eye that is not being tested, fixate the other eye on the yellow target at the center of the screen at all times.</li>
+            <li>Press spacebar when you see a stimulus.</li>
+        </ul>
+        <p>Results will be displayed after each visual field test.</p>
+        <p>After the later rounds of test, you will also be asked to assign a score to the distance calibraion method based on ease of use.</p><br>
+
+        <p>Choose below which eye you wish to test. The same eye will be tested for all parts of this study.</p>
+        <p>Then press the button below to begin the practice round</p>
+
+        <p>Choose which eye to test:</p>
+        <input type="radio" name="testEye" id="leftEye" value="-1">
+        <label for="leftEye">Left eye</label>
+        <input type="radio" name="testEye" id="rightEye" value="1">
+        <label for="rightEye">Right eye</label>
+        <br>
+        <br>
+    
+    
+        <a href="gvo.html"  
+            onclick="window.open('gvo.html', 
+                             'newwindow', 
+                             'width=screen.width, height=200'); 
+                  return false;"
+        ><button disabled id="practiceRoundButton" onclick="registerTestEye()">To practice round</button></a>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
